@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Naveen Shankar D">
+
+    <!-- Webpage Title -->
+    <title>Netronics'24 - Department of Networking and Mobile Application</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <link href="./css/aos.min.css" rel="stylesheet">
+    <link href="./css/swiper.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script defer src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+    <script defer src="js/firebase.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/netlogo.png">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main navigation">
+        <div class="container">
+
+            <a class="navbar-brand logo-text" href="index.html">Netronics' 24</a>
+
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault" >
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#plans">Rules</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#committee">Committee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#feedback">Feedbacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#register" class="nav-link" style="padding: 8px 16px; background: linear-gradient(45deg, #FF6B6B, #FFD93D, #6BFF6B, #3D83FF); 
+                        color: white; border-radius: 25px; text-align: center; font-weight: bold; 
+                        transition: background 0.5s ease-in-out, transform 0.3s; display: inline-block; 
+                        animation: colorchange 2s infinite alternate;">
+                            Register Now
+                        </a>
+                    </li>
+                </ul>
+                </span>
+            </div> <!-- end of navbar-collapse -->
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Home -->
+    <section class="home py-5 d-flex align-items-center" id="header">
+        <div class="container text-light py-5"  data-aos="fade-right"> 
+            <h1 class="headline">Join the Ultimate <span class="home_text">Netronics</span><br>Symposium Experience</h1>
+            <p class="para para-light py-3">Engage in insightful events and games. Don't miss the chance to be part of this innovative event!</p>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-network-wired fa-lg"></i></p>
+                <p>From Connections to Creations</p>  
+            </div>
+            <div class="d-flex align-items-center">
+                <p class="p-2"><i class="fas fa-microchip fa-lg"></i></p>
+                <p>Participate in challenging competitions and win exciting prizes.</p>  
+            </div>
+            <div class="my-3">
+                <a class="btn" href="#register">Register Now</a>
+            </div>
+        </div> <!-- end of container -->
+    </section> 
+    <!-- end of home -->
+
+
+    <!-- Information -->
+    <section class="information">
+        <div class="container-fluid">  
+            <div class="row text-light">
+                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                    <i class="fas fa-award fa-3x p-2"></i>
+                    <h4 class="py-3">3 Consecutive Years</h4>
+                    <p class="para-light">Celebrating three successful years of Netronics'23, Netronics' 2.0, and now <b>Netronics' 23</b>.</p>
+                </div>
+                <div class="col-lg-4 text-center p-5" data-aos="zoom-in">
+                    <i class="fas fa-calendar-alt fa-3x p-2"></i>
+                    <h4 class="py-3">5+ Events</h4>
+                    <p class="para-light">Featuring more than 5 exciting events</p>
+                </div>
+                <div class="col-lg-4 text-center p-5 text-dark" data-aos="zoom-in"> 
+                    <i class="fas fa-users fa-3x p-2"></i>
+                    <h4 class="py-3">1000+ Participants</h4>
+                    <p class="para-light">Over 1000 participants recorded in the past 2 years, showcasing a strong and diverse community.</p>
+                </div>
+            </div>
+        </div> <!-- end of container -->
+    </section> <!-- end of information -->
+    
+
+    <!-- About -->
+<section class="about d-flex align-items-center text-light py-5" id="about">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-7" data-aos="fade-right">
+                <p>ABOUT NETRONICS</p>
+                <h1>Netronics '24: Premier Symposium</h1>
+                <p class="py-2 para-light">Launched in 2023, Netronics has quickly become one of PSGCAS's largest symposiums, drawing over 1,000 participants annually. From its beginnings as Netronics '23 to the current Netronics '24, it reflects the growth and success of our department's flagship event.</p>
+                <p class="py-2 para-light">Netronics '24 offers a mix of tech and non-tech challenges, including the popular 'Test Your Bond' event. The symposium culminates in an overall championship trophy, with certificates for all participants.</p>
+            </div>
+            <div class="col-lg-5 text-center py-4 py-sm-0" data-aos="fade-down"> 
+                <img class="img-fluid" src="./assets/images/about.jpg" alt="about">
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of about -->
+
+
+
+    <!-- Services -->
+<section class="services d-flex align-items-center py-5" id="services">
+    <div class="container text-light">
+        <div class="text-center pb-4">
+            <p>OUR EVENTS</p> 
+            <h2 class="py-2">Discover Our Exciting Events</h2>
+            <p class="para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, quia accusantium sunt corporis optio recusandae? Nostrum libero pariatur cumque, ipsa dolores voluptatibus voluptate alias sit fuga. Itaque, ea quo.</p>
+        </div>
+        <div class="row gy-4 py-2" data-aos="zoom-in">
+            <div class="col-lg-4">
+                <div class="card bg-transparent">
+                    <i class="fas fa-calendar-day fa-2x"></i>
+                    <h4 class="py-2">Event 1</h4>
+                    <p class="para-light">Join us for an exciting day filled with engaging activities and networking opportunities. Don't miss out on the fun and excitement!</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-transparent">
+                    <i class="fas fa-calendar-week fa-2x"></i>
+                    <h4 class="py-2">Event 2</h4>
+                    <p class="para-light">Participate in our interactive workshops and sessions designed to enhance your skills and knowledge. Experience learning like never before!</p>
+                </div>                    
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-transparent">
+                    <i class="fas fa-calendar-alt fa-2x"></i>
+                    <h4 class="py-2">Event 3</h4>
+                    <p class="para-light">Be part of our annual celebration featuring special guests and memorable moments. Celebrate with us and create lasting memories!</p>
+                </div>                    
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-transparent">
+                    <i class="fas fa-calendar-check fa-2x"></i>
+                    <h4 class="py-2">Event 4</h4>
+                    <p class="para-light">Engage in exciting competitions and challenges with participants from all over. Showcase your skills and win amazing prizes!</p>
+                </div>                    
+            </div>
+            <div class="col-lg-4">
+                <div class="card bg-transparent">
+                    <i class="fas fa-calendar-day fa-2x"></i>
+                    <h4 class="py-2">Event 5</h4>
+                    <p class="para-light">Attend our informative seminars and talks led by industry experts. Gain insights and knowledge to boost your career and personal growth!</p>
+                </div>                    
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of services -->
+
+
+
+  <!-- Plans -->
+<section class="plans d-flex align-items-center py-5" id="plans">
+    <div class="container text-light">
+        <div class="text-center pb-4">
+            <p>OUR EVENTS</p>
+            <h2 class="py-2">Discover Our Exciting Events</h2>
+            <p class="para-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores, quia accusantium sunt corporis optio recusandae? Nostrum libero pariatur cumque, ipsa dolores voluptatibus voluptate alias sit fuga. Itaque, ea quo.</p>
+        </div>
+        <div class="row gy-4">
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4" style="height: 450px; width: 300px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h4 class="py-2">Event 1</h4>
+                    <p class="py-3">Exciting day filled with engaging activities and networking opportunities.</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Interactive sessions with industry experts.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Networking with like-minded individuals.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Exciting contests and competitions.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Special guest appearances.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Memorable experiences and takeaways.</p>
+                    </div>
+                    <h4 class="py-3">$30/Entry</h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link">View Details</a>
+                    </div>
+                </div>  
+            </div>
+
+            <!-- Repeat for other events with similar structure -->
+
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4" style="height: 450px; width: 300px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h4 class="py-2">Event 2</h4>
+                    <p class="py-3">Join our interactive workshops and sessions to enhance your skills.</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Hands-on workshops with experts.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Group activities and team-building exercises.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>In-depth discussions on industry trends.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Certificates of participation.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Exclusive access to materials and resources.</p>
+                    </div>
+                    <h4 class="py-3">$50/Workshop</h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link">View Details</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4" style="height: 450px; width: 300px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h4 class="py-2">Event 3</h4>
+                    <p class="py-3">Celebrate with us at our annual special event featuring various activities.</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Entertainment and live performances.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Interactive games and fun activities.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Meet and greet with special guests.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Special giveaways and prizes.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Food and beverages included.</p>
+                    </div>
+                    <h4 class="py-3">$75/Person</h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link">View Details</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4" style="height: 450px; width: 300px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h4 class="py-2">Event 4</h4>
+                    <p class="py-3">Participate in our exciting competitions and challenges.</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Various competitive categories.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Opportunity to showcase your skills.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Networking with other participants.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Prizes for winners and participants.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Certificates for all participants.</p>
+                    </div>
+                    <h4 class="py-3">$40/Entry</h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link">View Details</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4" style="height: 450px; width: 300px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h4 class="py-2">Event 5</h4>
+                    <p class="py-3">Attend our informative seminars and talks with industry leaders.</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>In-depth seminars on various topics.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Interactive Q&A sessions with experts.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Networking opportunities with professionals.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Access to exclusive content and materials.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Certificates of participation.</p>
+                    </div>
+                    <h4 class="py-3">$60/Seminar</h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link">View Details</a>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card bg-transparent px-4" style="height: 450px; width: 300px; overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+                    <h4 class="py-2">Event 6</h4>
+                    <p class="py-3">Join us for our annual gala with exclusive performances and dining.</p>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Elegant gala dinner and entertainment.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Live music and performances.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Networking with key figures and guests.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Special awards and recognitions.</p>
+                    </div>
+                    <div class="block d-flex align-items-center">
+                        <p class="pe-2"><i class="far fa-check-circle fa-1x"></i></p>
+                        <p>Exclusive gala gift bags.</p>
+                    </div>
+                    <h4 class="py-3">$100/Person</h4>
+                    <div class="my-3">
+                        <a class="btn" href="#your-link">View Details</a>
+                    </div>
+                </div>  
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of plans -->
+
+
+
+   <!-- Work -->
+<section class="work d-flex align-items-center py-5">
+    <div class="container-fluid text-light">
+        <div class="row">
+            <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right">
+                <img class="img-fluid" src="./assets/images/work.jpg" alt="work">        
+            </div>
+            <div class="col-lg-5 d-flex align-items-center px-4 py-3" data-aos="">
+                <div class="row">
+                    <div class="text-center text-lg-start py-4 pt-lg-0">
+                        <p>OUR EVENT</p>
+                        <h2 class="py-2">A Grand Celebration of Innovation and Creativity</h2>
+                        <p class="para-light">Join us as we celebrate the pinnacle of creativity and innovation at Netronics'24. With a range of exciting activities, awards, and participation from a diverse audience, this event promises an unforgettable experience full of inspiration and achievement.</p>
+                    </div>
+                    <div class="container" data-aos="fade-up">
+                        <div class="row g-5">
+                            <div class="col-6 text-start">
+                                <i class="fas fa-trophy fa-2x"></i>
+                                <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="3">1</h2>
+                                <p>Overall Championship</p>
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-award fa-2x"></i>
+                                <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="3">10</h2>
+                                <p>Awards</p>
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-users fa-2x"></i>
+                                <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="1000" data-purecounter-duration="3">1000+</h2>
+                                <p>Participants (expected)</p>
+                            </div>
+                            <div class="col-6">
+                                <i class="fas fa-clock fa-2x"></i>
+                                <h2 class="purecounter" data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="3">8</h2>
+                                <p>Hours of Fun</p>
+                            </div>
+                        </div>
+                    </div> <!-- end of container -->
+                </div> <!-- end of row -->
+            </div> <!-- end of col-lg-5 -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of work -->
+
+
+
+    <!-- Our Committee -->
+<div class="slider-1 testimonial text-light d-flex align-items-center" id="committee">
+    <div class="container">
+        <div class="row">
+            <div class="text-center w-lg-75 m-auto pb-4">
+                <p>OUR COMMITTEE</p>
+                <h2 class="py-2">Meet Our Team</h2>
+                <p class="para-light">We are proud to introduce the dedicated members of our committee who work tirelessly to make Netronics a success.</p>
+            </div>
+        </div> <!-- end of row -->
+        <div class="row p-2" data-aos="zoom-in">
+            <div class="col-lg-12">
+                <!-- Card Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container card-slider">
+                        <div class="swiper-wrapper">
+                            
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Head of the Department</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/head_of_department.jpg" alt="Head of Department">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Dr. P. Nithya</h6>
+                                            <p><a href="https://www.psgcas.ac.in/faculty_profile.html?facultyId=S0051" target="_blank">View Profile</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Association Incharge</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/association_incharge.jpg" alt="Association Incharge">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Dr. I. Shanmugapriya</h6>
+                                            <p><a href="https://www.psgcas.ac.in/faculty_profile.html?facultyId=S0721" target="_blank">View Profile</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Event Incharges</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/event_incharge.jpg" alt="Event Incharges">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Dr. B. Uma Maheswari</h6>
+                                            <p><a href="https://www.psgcas.ac.in/faculty_profile.html?facultyId=S0066" target="_blank">View Profile</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Additional Event Incharges Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Event Incharges</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/event_incharge.jpg" alt="Event Incharges">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Dr. V. R. Kavitha</h6>
+                                            <p><a href="https://www.psgcas.ac.in/faculty_profile.html?facultyId=S0627" target="_blank">View Profile</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Student Incharges</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/student_incharge.jpg" alt="Student Incharges">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Chairpersons</h6>
+                                            <p>Mr. Saravanakumar M</p>
+                                            <p>Ms. Anu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Student Incharges</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/student_incharge.jpg" alt="Student Incharges">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Secretary</h6>
+                                            <p>Name - 1</p>
+                                            <p>Name - 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <div class="testimonial-card p-4">
+                                    <p>Student Incharges</p>
+                                    <div class="d-flex pt-4">
+                                        <div>
+                                            <img class="avatar" src="./assets/images/student_incharge.jpg" alt="Student Incharges">
+                                        </div>
+                                        <div class="ms-3 pt-2">
+                                            <h6>Joint Secretary</h6>
+                                            <p>Name - 1</p>
+                                            <p>Name - 2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end of swiper-slide -->
+                            <!-- end of slide -->
+
+                        </div> <!-- end of swiper-wrapper -->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
+
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of slider-container -->
+                <!-- end of card slider -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of Our Committee -->
+
+    <!-- Contact -->
+    <!-- Location -->
+   <!-- Location -->
+<section class="location text-light py-5">
+    <div class="container" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-3 d-flex align-items-center">
+                <div class="p-2"><i class="far fa-map fa-3x"></i></div>
+                <div class="ms-2">
+                    <h6>LOCATION</h6>
+                    <p>E-Block</p>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center">
+                <div class="p-2"><i class="fas fa-mobile-alt fa-3x"></i></div>
+                <div class="ms-2">
+                    <h6>CALL US</h6>
+                    <p>+91 93843 92556</p>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center">
+                <div class="p-2"><i class="far fa-envelope fa-3x"></i></div>
+                <div class="ms-2">
+                    <h6>EMAIL US</h6>
+                    <p><a href="mailto:bvocnmapsgcas@gmail.com" class="text-light">bvocnmapsgcas@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex align-items-center">
+                <div class="p-2"><i class="far fa-clock fa-3x"></i></div>
+                <div class="ms-2">
+                    <h6>EVENT DATE & TIME</h6>
+                    <p>30.08.2024, 9:00 AM</p>
+                </div>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of location -->
+
+<!-- Feedback -->
+<section class="feedback py-5" id="feedback" style="background-color: #1c262f; color: #FFFFFF;">
+    <div class="container" data-aos="zoom-in">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="py-2" style="color: #FFFFFF;">For Feedbacks and Grievances</h2>
+                <p class="para-light" style="color: #FFFFFF;">Your feedback helps us improve and your grievances ensure we address any issues promptly. Please let us know your thoughts and concerns about the event. Click the button below to share your feedback or report any grievances.</p>
+                <a href="https://forms.gle/xEZLQKxKMjwxUubn6" target="_blank" class="btn btn-primary" style="background-color: #1c262f; border-color: #1c262f;">Submit Feedback | Report Grievance</a>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section>
+
+
+    <!-- Footer -->
+<section class="footer text-light" id="contact">
+    <div class="container">
+        <div class="row" data-aos="fade-right">
+            <!-- Social Links Section -->
+            <div class="col-lg-6 py-4 py-md-5">
+                <h4 class="mb-4">Connect with Us</h4>
+                <div class="d-flex flex-column">
+                    <p><i class="fab fa-youtube fa-lg me-2"></i><a href="https://www.youtube.com/@bnma_psgcas" class="text-light">YouTube</a></p>
+                    <p><i class="fab fa-instagram fa-lg me-2"></i><a href="https://www.instagram.com/bnma_psgcas" class="text-light">Instagram</a></p>
+                    <p><i class="fab fa-whatsapp fa-lg me-2"></i><a href="https://wa.me/919384392556" class="text-light">WhatsApp</a></p>
+                    <p><i class="far fa-envelope fa-lg me-2"></i><a href="mailto:bvocnmapsgcas@gmail.com" class="text-light">Mail: bvocnmapsgcas@gmail.com</a></p>
+                </div>
+            </div> <!-- end of col -->
+
+            <!-- Useful Links Section -->
+            <div class="col-lg-6 py-4 py-md-5">
+                <h4 class="mb-4">Useful Links</h4>
+                <div class="d-flex flex-column">
+                    <p><i class="fas fa-caret-right me-2"></i><a href="https://www.psgcas.ac.in" class="text-light">PSGCAS</a></p>
+                    <p><i class="fas fa-caret-right me-2"></i><a href="https://laudea.psgcas.ac.in" class="text-light">Laudea</a></p>
+                    <p><i class="fas fa-caret-right me-2"></i><a href="https://moodle.psgcas.ac.in" class="text-light">Moodle</a></p>
+                    <p><i class="fas fa-caret-right me-2"></i><a href="http://opac.psgcas.ac.in" class="text-light">Library</a></p>
+                    <p><i class="fas fa-caret-right me-2"></i><a href="https://www.psgcas.ac.in/unaided_csnma_ndeptprofile.html" class="text-light">BNMA</a></p>
+                </div>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</section> <!-- end of footer -->
+
+
+ <!-- Begin Hitwebcounter code -->
+ <div class="bottom py-2">
+    <div class="container">
+        <p>Page Views:</p>
+        <!-- Hitwebcounter Widget -->
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=15816240&style=0010&nbdigits=6&type=page&initCount=0" 
+                 title="Counter Widget" 
+                 alt="Visit counter For Websites" 
+                 border="0" />
+        </a>
+        <p>Creator: <a href="https://naveenshankar.wuaze.com/?i=1" class="text-light">Naveen Shankar D</a></p>
+        <p>Copyright: Netronics'24 | Department of Networking and Mobile Applications</p>
+    </div> <!-- end of container -->
+</div> <!-- end of bottom -->
+<!-- End Hitwebcounter code -->
+
+    <!-- Back To Top Button -->
+    <button onclick="topFunction()" id="myBtn">
+        <img src="assets/images/up-arrow.png" alt="alternative">
+    </button>
+    <!-- end of back to top button -->
+
+    
+    <!-- Scripts -->
+    <script src="./js/bootstrap.min.js"></script><!-- Bootstrap framework -->
+    <script src="./js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
+    <script src="./js/swiper.min.js"></script><!-- Swiper for image and text sliders -->
+    <script src="./js/aos.js"></script><!-- AOS on Animation Scroll -->
+    <script src="./js/script.js"></script>  <!-- Custom scripts -->
+</body>
+</html>
